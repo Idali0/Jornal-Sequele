@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jornal Sequele | Login</title>
+    <link rel="stylesheet" href="style/page-login.css" />
+  </head>
+  <body>
+    <main class="login-container">
+      <section class="left-side">
+        <img
+          src="./login-illustration.svg"
+          height="300"
+          width="300"
+          alt="illustration login"
+        />
+        <h1 class="main-title">
+          Sequele <span class="decorated-title">news</span>
+        </h1>
+      </section>
+      <section class="right-side">
+        <figure class="logo-wrapper">
+          <img src="logo.png" alt="logo" />
+        </figure>
+        <form class="login-form">
+          <div class="field-wrapper">
+            <label class="field-label" for="username">Nome de Utilizador</label>
+            <input
+              class="field-input"
+              placeholder="Ex: António Maurício"
+              id="username"
+              type="text"
+            />
+          </div>
+
+          <div class="field-wrapper">
+            <label class="field-label" for="password">Senha</label>
+            <input
+              class="field-input"
+              placeholder="********"
+              id="password"
+              type="password"
+            />
+          </div>
+
+          <button class="button" type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

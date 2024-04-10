@@ -1,0 +1,87 @@
+body {
+  min-height: 100vh;
+  background:#3D3D3D;
+  background: linear-gradient(
+    90deg,
+    rgba(178, 192, 181, 0.664) 0%,
+    rgba(118, 136, 123, 0.747) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.login-container {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+
+  & .left-side {
+    flex: 0 0 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#8b8787;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+
+    & img {
+      animation-name: pulsate;
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      backface-visibility: hidden;
+      margin-top: 30%;
+    }
+
+    & .main-title {
+      margin-top: 10%;
+      text-align: center;
+      font-size: 48px;
+      color: var(--color-secondary);
+      text-transform: capitalize;
+      font-weight: 500;
+
+      & .decorated-title {
+        color: #e1745f;
+        background-color: #f9f3e8;
+        padding: 4px 8px;
+        border-radius: 6px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .right-side {
+    flex: 1;
+    background: white;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+
+    .logo-wrapper {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    .login-form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+    }
+  }
+}
