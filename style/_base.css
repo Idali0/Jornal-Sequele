@@ -116,5 +116,8 @@ a:link {
       font-weight: 700;
       font-size: 16px;
     }
+    & .link{
+      text-decoration: none;
+    }
   }
 }
