@@ -16,8 +16,8 @@
 
 .search {
   display: flex;
-  justify-content: space-between;
   padding: 12px;
+  justify-content: center;
 }
 
 .search-box {
@@ -29,6 +29,10 @@
   display: flex;
   justify-content: space-between;
 
+}
+
+.add {
+  margin-left: auto;
 }
 
 ::-webkit-input-placeholder {
@@ -69,7 +73,6 @@
   width: 320px;
   padding-left: 20px;
 }
-
 
 .user-list {
   list-style: none;
