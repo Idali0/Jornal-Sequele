@@ -9,6 +9,14 @@ img {
   width: 100%;
 }
 
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f7f7f7;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -116,8 +124,13 @@ a:link {
       font-weight: 700;
       font-size: 16px;
     }
-    & .link{
-      text-decoration: none;
-    }
+    & .btn-link{
+      width: 100px;
+      background: var(--color-secondary);
+      color: white;
+      border: 3px solid black;
+      border-radius: 8px;
+      padding: 6px;
+  }
   }
 }

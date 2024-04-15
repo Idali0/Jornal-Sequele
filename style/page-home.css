@@ -2,10 +2,6 @@
 @import "_components.css";
 
 body {
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  background-color: #f7f7f7;
   padding: 24px;
 }
 
@@ -34,50 +30,4 @@ main {
   gap: 24px;
   padding-bottom: 96px;
 }
-.news-card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  background-color: white;
-  padding: 12px;
-  border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.025);
-  transition: all ease-in-out 200ms;
-  cursor: pointer;
 
-  & .news-thumb {
-    border-radius: 6px;
-  }
-
-  &:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px) scale(1.01);
-  }
-
-  & .news-title {
-    font-weight: 700;
-    text-transform: capitalize;
-  }
-
-  & .news-category {
-    width: max-content;
-    padding: 6px 12px;
-    background-color: var(--color-tertiary);
-    font-weight: 700;
-    border-radius: 4px;
-    color: var(--color-secondary);
-  }
-
-  & .news-details {
-    font-weight: 700;
-
-    & .news-author {
-      margin-right: 12px;
-      color: var(--color-secondary);
-    }
-    & .news-date {
-      color: #949494;
-    }
-  }
-
-}
