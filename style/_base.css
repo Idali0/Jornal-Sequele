@@ -123,6 +123,8 @@ a:link {
     & .iten-list {
       font-weight: 700;
       font-size: 16px;
+      
+      
     }
     & .btn-link{
       width: 100px;
