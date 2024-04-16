@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="style/page-admin.css"
+<body>
+    
+    <div class="listaRegistros">
+
+        <div class="_search">
+            <input class="input-search" placeholder="Pesquisar..." autofocus id='inputPesquisa' />
+        </div>
+
+        <table class="user">
+            <thead class="user-menu">
+                <tr class="user-dados">
+                    <th class="user-acess">ID</th>
+                    <th class="user-acess">Nome</th>
+                    <th class="user-acess">Contato</th>
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+
+        
+
+    </div>
+
+    <form class="cadastroRegistro">
+
+        <div class="label">
+            <div>ID</div>
+            <div>
+                <input type='number' readonly id='id' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Nome</div>
+            <div>
+                <input id='Nome' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Contato</div>
+            <div>
+                <input type='tel' id='contato' />
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button class="delete">Eliminar</button>
+        </div>
+
+    </form>
+
+    <div class="new-user-btn">
+        <button class="user-btn">Novo usuário</button>
+    </div>
+
+</body>
+</html>
