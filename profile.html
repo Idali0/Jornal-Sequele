@@ -12,11 +12,25 @@
   <div class="hero-section">
     <a href="index.html"><img class="logo" src="logo.png" alt="" /></a> 
     <h1 class="titulo-h1">Bem-vindo ao meu Perfil</h1>
-    <div class="avatar-wrapper">
-    <a href=""> <img class="avatar-img" src="icon-perfil-2.svg" alt="" /></a> 
+    <div class="avatar-wrapper" onclick="dropdown()" id="drop-btn">
+    <img class="avatar-img" src="icon-perfil-2.svg" alt="" /> 
     </div>
   </div>
- 
+  <div class="drop-group" id="drop-group">
+    <div class="img">
+        <img src="bg.png" alt="">
+    </div>
+    <div class="status">
+        <p>Nome Completo</p>
+        <p>@nomedeutilizador</p>
+        <p>Contacto</p>
+        <p onclick="fechar()" class="fechar">X Fechar</p>
+    </div>
+    <hr>
+    <div class="btn">
+        <button><a href="index.html">Terminar Sessão</a></button>
+    </div>
+</div>
   <section class="search">
     <div class="search-box">
       <input type="text" class="search-text" placeholder="Pesquisar...">
@@ -171,5 +185,19 @@
     </section>
   </main>
 </body>
+  <script>
+    let jan = window.document.getElementById("drop-group")
+    function dropdown(){
+        if(jan.classList.contains("ativo")){
+          jan.classList.remove("ativo")
+        }
+        else{
+          jan.classList.add("ativo")
+        }
 
+    }
+    function fechar(){
+      jan.classList.remove("ativo")
+    }
+  </script>
 </html>

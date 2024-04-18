@@ -2,12 +2,16 @@
 @import '_components.css';
 
 .hero-section {
+  background: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .12);
   height: 5vh;
+}
+
+.titulo-h1{
+  color: white;
 }
 
 .logo {
@@ -133,3 +137,53 @@
   height: min-content;
   padding: 48px 24px;
 }
+
+
+div.drop-group{
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  background-color: lightgray;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;}
+div.drop-group.ativo{
+  display: flex;
+}
+div.drop-group div.img{
+  margin-bottom: 50px;}
+div.drop-group div.img img{
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;}
+div.drop-group div.status p{
+  margin-bottom: 5px;
+  text-align: center;
+  color: #333;}
+div.drop-group div.status p.fechar{
+  color: red;
+  cursor: pointer;
+}
+div.drop-group div.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;}
+div.drop-group hr{
+  width: 100%;
+  border: 1px solid #1f3d70;
+  margin-top: 20px;}
+div.drop-group div.btn button{
+  background-color: #1f3d70;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: none;}
+div.drop-group div.btn button a{
+  text-decoration: none;
+  color: white;}

@@ -45,7 +45,7 @@
   cursor: pointer;
 
   & .news-thumb {
-    border-radius: 6px;
+    border-radius: 6px; 
   }
 
   &:hover {
